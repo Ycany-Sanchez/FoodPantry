@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:gravity="center"
+    android:background="#F7FFDC">
+
+    <ImageView
+        android:id="@+id/imageviewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="PantryPlanner Logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textviewSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimize waste. Maximize taste."
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="40dp"
+        android:textColor="#444444" />
+
+
+    <EditText
+        android:id="@+id/edittextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Username or Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <EditText
+        android:id="@+id/edittextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textviewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:layout_marginTop="25dp"
+        android:textColor="#2E7D32"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="10dp" />
+
+</LinearLayout>

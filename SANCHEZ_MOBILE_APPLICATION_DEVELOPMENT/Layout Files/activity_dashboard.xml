@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="#F7FFDC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/textviewWelcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Welcome, Chef Ycany!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32" />
+
+        <TextView
+            android:id="@+id/textviewProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/edittext_rounded"
+            android:backgroundTint="#2E7D32"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/edittext_rounded"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Pantry Inventory"
+            android:textColor="#2E7D32"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textviewPantryStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Your Pantry is currently empty.
+                            Add ingredients to see recipe suggestions!"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonAddIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2E7D32"
+            android:text="+ Add Ingredients"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Suggestions"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#2E7D32" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:background="@drawable/edittext_rounded"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textviewRecipeSuggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No ingredients found yet"
+            android:textColor="#888888" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textviewLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:textColor="#D32F2F"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext_rounded"
+        android:padding="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FFDC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View Recipe"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32" />
+
+            <ImageButton
+                android:id="@+id/buttonFavorite"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Favorite" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textviewRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipe Title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textviewRecipeChef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source"
+            android:textSize="13sp"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textviewReadyIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready in — min"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textviewServings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serves —"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nutrition Facts"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textviewCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories: —"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textviewProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protein: —"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textviewCarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbs: —"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textviewFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fat: —"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>

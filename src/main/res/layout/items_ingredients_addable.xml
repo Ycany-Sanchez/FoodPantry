@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_marginBottom="4dp">
+
+    <TextView
+        android:id="@+id/textviewIngredientName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ingredient"
+        android:textSize="15sp"
+        android:textColor="#333333" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:text="+ Add"
+        android:textSize="11sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32" />
+
+</LinearLayout>
